@@ -19,10 +19,16 @@ type (
 )
 
 // NewHubHTTPClient is creating the default client
-func NewHubHTTPClient() HTTPClient {
+func NewHubHTTPClient() HubHTTPClient {
 	return HubHTTPClient{
 		httpClient: &http.Client{},
 	}
+}
+
+// WithTransport replaces the underlying HTTP client transport
+func (hc HubHTTPClient) WithTransport(transport http.RoundTripper) HTTPClient {
+	hc.httpClient.Transport = transport
+	return hc
 }
 
 // Exec executes notification hub http request and handles the response
