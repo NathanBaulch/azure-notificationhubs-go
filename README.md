@@ -17,7 +17,7 @@ Basically a wrapper for this [Rest API](https://docs.microsoft.com/en-us/rest/ap
 Using go get
 
 ```sh
-go get github.com/daresaydigital/azure-notificationhubs-go
+go get github.com/NathanBaulch/azure-notificationhubs-go
 ```
 
 ## Registering device
@@ -28,7 +28,7 @@ package main
 import (
   "context"
   "strings"
-  "github.com/daresaydigital/azure-notificationhubs-go"
+  "github.com/NathanBaulch/azure-notificationhubs-go"
 )
 
 func main() {
@@ -77,7 +77,7 @@ package main
 import (
   "context"
   "fmt"
-  "github.com/daresaydigital/azure-notificationhubs-go"
+  "github.com/NathanBaulch/azure-notificationhubs-go"
 )
 
 func main() {

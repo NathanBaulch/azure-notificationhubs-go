@@ -4,7 +4,7 @@ import (
 	"net/url"
 	"testing"
 
-	. "github.com/daresaydigital/azure-notificationhubs-go"
+	. "github.com/NathanBaulch/azure-notificationhubs-go"
 )
 
 func Test_NewNotificationHub(t *testing.T) {

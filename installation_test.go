@@ -8,7 +8,7 @@ import (
 	"reflect"
 	"testing"
 
-	. "github.com/daresaydigital/azure-notificationhubs-go"
+	. "github.com/NathanBaulch/azure-notificationhubs-go"
 )
 
 func Test_Install(t *testing.T) {

@@ -3,7 +3,7 @@ package notificationhubs_test
 import (
 	"testing"
 
-	. "github.com/daresaydigital/azure-notificationhubs-go"
+	. "github.com/NathanBaulch/azure-notificationhubs-go"
 )
 
 func TestNotificationFormat_GetContentType(t *testing.T) {
