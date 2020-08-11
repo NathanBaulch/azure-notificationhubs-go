@@ -22,7 +22,7 @@ import (
 func (h *NotificationHub) Send(ctx context.Context, n *Notification, tags *string) (raw []byte, telemetry *NotificationTelemetry, err error) {
 	raw, telemetry, err = h.send(ctx, n, tags, nil)
 	if err != nil {
-		return nil, nil, fmt.Errorf("notificationhubs.SendDirect: %s", err)
+		return nil, nil, fmt.Errorf("notificationhubs.Send: %s", err)
 	}
 	return
 }
